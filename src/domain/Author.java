@@ -2,21 +2,20 @@ package domain;
 
 import java.io.Serializable;
 
-/**
- * Created by Vika on 2/22/2016.
- */
 public class Author implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    private int idAuthor;
+    private int id;
+    private String name;
+    private String surname;
 
-    public int getIdAuthor() {
-        return idAuthor;
+    public int getId() {
+        return id;
     }
 
-    public void setIdAuthor(int idAuthor) {
-        this.idAuthor = idAuthor;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -34,8 +33,5 @@ public class Author implements Serializable {
     public void setSurname(String surname) {
         this.surname = surname;
     }
-
-    private String name;
-    private String surname;
 
 }
